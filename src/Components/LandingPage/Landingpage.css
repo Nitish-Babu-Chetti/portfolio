@@ -1,0 +1,91 @@
+
+#main-container {
+    background: rgba(255, 255, 255, 0.1); /* Light, semi-transparent white background */
+    backdrop-filter: blur(12px); /* Strong blur effect for glassiness */
+    -webkit-backdrop-filter: blur(20px); /* Vendor prefix for Safari */
+    border-radius: 10px; /* Rounded corners for the glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.25); /* Light border for contrast */
+    padding: 10px 20px; /* Padding for spacing */
+    position: relative; /* Ensure proper positioning of pseudo-elements */
+}
+#main-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Very light white overlay for added gloss */
+    border-radius: 10px;
+    z-index: -1;
+}
+#landingpage-left-part
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card
+{
+    border: none;
+}
+#intro h1
+{
+    white-space: nowrap;
+}
+#intro
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#name {
+    margin-left: 15px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white; /* Cursor effect */
+    width: 0; /* Start with no width */
+    animation: typing 4s steps(8) infinite alternate,
+    blink 1s step-end infinite; /* Adjust steps to the number of characters */
+    letter-spacing: 5px;
+}
+
+/* Typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 8ch; /* 6 characters ("Nitish") */
+    }
+}
+
+/* Blinking cursor */
+@keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
+#social-media-links ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25%;
+    list-style: none;
+}
+#social-media-links ul li a{
+    color: white;
+    text-decoration: none;
+ }
+
+
+#landingpage-right-part img
+{
+    height: 80vh;
+}

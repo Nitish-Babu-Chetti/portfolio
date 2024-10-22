@@ -1,0 +1,62 @@
+#nav {
+    background: rgba(255, 255, 255, 0.15); /* Light, semi-transparent white background */
+    backdrop-filter: blur(20px); /* Strong blur effect for glassiness */
+    -webkit-backdrop-filter: blur(20px); /* Vendor prefix for Safari */
+    border-radius: 10px; /* Rounded corners for the glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.25); /* Light border for contrast */
+    padding: 10px 20px; /* Padding for spacing */
+    position: relative; /* Ensure proper positioning of pseudo-elements */
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*width: 100%;*/
+    /*z-index: 1;*/
+}
+#nav .navbar-brand
+{
+    font-size: xx-large;
+    color: white;
+    font-weight: 400;
+    font-family: "Comic Sans MS";
+}
+#nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Very light white overlay for added gloss */
+    border-radius: 10px;
+    z-index: -1;
+}
+#navbarNav
+{
+    float: right;
+}
+#nav .nav-link
+{
+    color: white;
+    white-space: nowrap;
+    padding: 10px;
+    font-weight: 400;
+    font-size: medium;
+}
+#navitems
+{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#navitems li
+{
+    margin-left: 15px;
+}
+#nav .nav-link:hover
+{
+    background: rgba(255 , 255 , 255 ,0.1);
+    padding: 10px;
+    transition: linear 0.2s;
+    border-radius: 10px;
+}

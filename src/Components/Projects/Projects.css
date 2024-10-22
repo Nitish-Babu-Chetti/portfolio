@@ -1,0 +1,44 @@
+#projects .card-body .card
+{
+    background-color: transparent;
+    border : 1px solid white;
+    text-align: center;
+}
+#projects figure img
+{
+    max-width: 350px;
+    height: 250px;
+}
+#projects figcaption
+{
+    text-align: start;
+}
+#projects .card-body .card button
+{
+    background-color: transparent;
+}
+#projects .card-body .card button:hover
+{
+    background-color: transparent;
+    border: 1px solid rgba(255 , 255, 255, 0.1);
+    color: white;
+}
+.project-title
+{
+    color: white;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+figure a
+{
+    text-decoration: none;
+}
+@media (max-width: 500px)
+{
+    #projects figure img
+    {
+        max-width: 250px;
+        height: 250px;
+    }
+}

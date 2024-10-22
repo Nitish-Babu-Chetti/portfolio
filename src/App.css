@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("../src/images/background.jpg");
+    background-size: cover; /* Optional: Make the image cover the entire body */
+    background-position: center; /* Optional: Center the image */
+    background-repeat: no-repeat; /* Optional: Prevent image repetition */
+    height: 100%;
+}

@@ -1,0 +1,21 @@
+#contact-details a
+{
+    text-decoration: none;
+    display: block;
+    font-size: xx-large;
+    color: white;
+    margin-top: 10px;
+}
+#contact .card-footer button
+{
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(255 , 255, 255, 0.1);
+}
+#contact-details
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
